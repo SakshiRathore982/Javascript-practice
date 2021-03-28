@@ -52,3 +52,34 @@ function stuttering(str)
 console.log("-------------------------------");
 console.log(stuttering("sakshi"));
 console.log(stuttering("incredible"));
+
+// function for identifing plural and singular
+function plural(str)
+{
+    if (str[str.length-1]=="s")
+        return `${str} is plural`;
+    else
+        return `${str} is singular`;
+}
+console.log("-----------------------------");
+console.log(plural("books"));
+console.log(plural("kite"));
+console.log(plural("boys"));
+
+// function to calculate 
+function carNeeded(n)
+{
+    if (n == 0)
+        return 0;
+    else 
+        var ans = parseInt(n / 5) + n % 5;
+    return ans;
+}
+console.log("---------------------------");
+console.log(`carNeeded(5) -> ${carNeeded(5)}`);
+console.log(`carNeeded(11)-> ${carNeeded(11)}`);
+
+// function 
+const ar = ["sak", "dash", "hudd"];
+let [, dash,] = ar;
+console.log(dash);
