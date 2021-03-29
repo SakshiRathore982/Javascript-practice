@@ -94,3 +94,25 @@ console.log("--------------------------------------------")
 console.log(totalcup(7))
 console.log(totalcup(12))
 console.log(totalcup(213))
+
+// function return string length
+function wordLength(word)
+{    var len=[]
+    for (let i = 0; i < word.length; i++)
+    {
+        len[i]=word[i].length
+    }
+    return len
+}
+console.log("--------------------------------------------")
+console.log(wordLength(["Hello", "world", "darling"]))
+
+// return filename
+function getFileName(str)
+{ 
+    var len = str.split("/")
+    return len[len.length-1];
+}
+console.log(getFileName("-----------------------------------------"))
+console.log(getFileName("C:/Projects/pil_tests/ascii/edabit.txt"))
+console.log(getFileName("C:/Users/johnsmith/Music/Beethoven_5.mp3"))
